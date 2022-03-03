@@ -1,7 +1,7 @@
 /* Palidroma:
 1) Chiedere all’utente di inserire una parola*/
 
-// let userword = 
+let userword = prompt("inserisci una parola");
 
 
 /*2) Creare una funzione per capire se la parola inserita è palindroma */
@@ -14,11 +14,11 @@
 /* Pari e Dispari */
 
 /* 1) L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.  //!check */
-let userGambling = prompt("inserisci pari o dispari:");
+let userGambling = prompt("inserisci pari o dispari:").toLowerCase().trim();
 
 /* ciclo di controllo sull'input dell'utente  */
 while(userGambling !== "pari" && userGambling !== "dispari"){
-    userGambling = prompt("inserisci pari o dispari:");
+    userGambling = prompt("inserisci pari o dispari:").toLowerCase().trim();
 }
 console.log(userGambling);
 
