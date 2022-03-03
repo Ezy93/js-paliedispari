@@ -1,18 +1,26 @@
 /* Palidroma:
-1) Chiedere all’utente di inserire una parola
-2) Creare una funzione per capire se la parola inserita è palindroma */
+1) Chiedere all’utente di inserire una parola*/
+
+// let userword = 
+
+
+/*2) Creare una funzione per capire se la parola inserita è palindroma */
 
 
 
 
 
 
-/* Pari e Dispari
+/* Pari e Dispari */
 
 /* 1) L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.  //!check */
+let userGambling = prompt("inserisci pari o dispari:");
 
-let userGambling = prompt("scrivi la tua scelta tra pari o dispari:");
+while(userGambling !== "pari" && userGambling !== "dispari"){
+    userGambling = prompt("inserisci pari o dispari:");
+}
 console.log(userGambling);
+
 let userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5:")); 
 console.log(userNumber);
 
