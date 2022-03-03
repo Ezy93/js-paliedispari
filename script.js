@@ -8,7 +8,6 @@
 
 
 /* Pari e Dispari
-5) Dichiariamo chi ha vinto. */
 
 /* 1) L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.  //!check */
 
@@ -39,22 +38,29 @@ console.log( random)
 let sum = userNumber + random
 console.log(sum)
 
+/* 5) Dichiariamo chi ha vinto. */ 
 
-/* if(oddOEven(sum)){
-    let even = "pari"
-    if(userGambling === even){
-        console.log("hai vinto la somma è pari")
+if(oddOEven(sum)){
+    
+    let controlVariable = "pari"
+    
+    if(userGambling === controlVariable){
+        console.log("hai vinto la somma è pari") //!check
     }else{
-        console.log("hai perso la somma è dispari")
+        console.log("hai perso la somma è pari") //!check
     }
-}else if(!oddOEven(sum)){
-    let odd = "dispari"
-    if(userGambling === odd){
-        console.log("hai vinto la somma è dispari")
+    
+}else{
+    
+    let controlVariable = "dispari"
+    
+    if(userGambling === controlVariable){
+        console.log("hai vinto la somma è dipari") //!check
     }else{
-        console.log("hai perso la somma è pari")
+        console.log("hai perso la somma è dispari")  //! check
     }
-} */
+    
+}
 
 
 
