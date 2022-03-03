@@ -16,12 +16,21 @@
 /* 1) L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.  //!check */
 let userGambling = prompt("inserisci pari o dispari:");
 
+/* ciclo di controllo sull'input dell'utente  */
 while(userGambling !== "pari" && userGambling !== "dispari"){
     userGambling = prompt("inserisci pari o dispari:");
 }
 console.log(userGambling);
 
+
+
 let userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5:")); 
+
+/* ciclo di controllo sull'input numerico dell'utente  */
+while(isNaN(userNumber) || userNumber < 1 || userNumber > 5){
+    userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5:"));
+}
+
 console.log(userNumber);
 
 /* 2) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). //!check */
