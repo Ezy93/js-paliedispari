@@ -1,10 +1,47 @@
 /* Palidroma:
 1) Chiedere all’utente di inserire una parola*/
 
-let userword = prompt("inserisci una parola");
+let userword = prompt("inserisci una parola").toLocaleLowerCase().trim();
+let arrayOfChar = [];
 
+while(!isNaN (userword)){
+    userword = prompt("inserisci una parola").toLocaleLowerCase().trim();
+}
+
+for(let i = 0; i < userword.length; i++){
+    arrayOfChar.push(userword.charAt(i));
+}
+
+console.log(arrayOfChar);
 
 /*2) Creare una funzione per capire se la parola inserita è palindroma */
+
+console.log(arrayOfChar.reverse());
+
+function isPalindrome(array){
+
+    if(array.length === array.reverse().length){
+
+        for(let x = 0; x < array.length; x++){
+    
+            if(array[x] === array.reverse()[x]){
+    
+                console.log("la parola da te inserita è palindroma");
+                
+            }else{
+    
+                console.log("la parola da te inserita NON è palindroma");
+                
+            }
+        }
+    }
+} 
+
+isPalindrome(arrayOfChar)
+
+
+
+
 
 
 
