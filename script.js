@@ -27,11 +27,11 @@ function isPalindrome(array){
             if(array[x] === array.reverse()[x]){
     
                 console.log("la parola da te inserita è palindroma");
-                
+                break;
             }else{
     
                 console.log("la parola da te inserita NON è palindroma");
-                
+                break;
             }
         }
     }
@@ -57,18 +57,18 @@ let userGambling = prompt("inserisci pari o dispari:").toLowerCase().trim();
 while(userGambling !== "pari" && userGambling !== "dispari"){
     userGambling = prompt("inserisci pari o dispari:").toLowerCase().trim();
 }
-console.log(userGambling);
+console.log("l'utente ha scommesso sul: " + userGambling);
 
 
 
-let userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5:")); 
+let userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5: ")); 
 
 /* ciclo di controllo sull'input numerico dell'utente  */
 while(isNaN(userNumber) || userNumber < 1 || userNumber > 5){
-    userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5:"));
+    userNumber = parseInt(prompt("scegli un numero compreso tra 1 e 5: "));
 }
 
-console.log(userNumber);
+console.log("l'utente ha scelto il numero: " + userNumber);
 
 /* 2) Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). //!check */
 function CPURandomNumber(){
@@ -86,11 +86,11 @@ function oddOEven(number){
 }
 
 let random = CPURandomNumber();
-console.log( random);
+console.log( "il numero scelto dalla CPU è: " + random);
 
 /* 3) Sommiamo i due numeri //! check*/
 let sum = userNumber + random;
-console.log(sum);
+console.log("la somma tra il numero scelto dall'utente e quello scelto dalla CPU è: " + sum);
 
 /* 5) Dichiariamo chi ha vinto. */ 
 
